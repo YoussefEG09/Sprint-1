@@ -1,4 +1,4 @@
-package TascaS1;
+package Ejercicio1_TascaS1;
 
 public class Wind extends Instruments {
 
