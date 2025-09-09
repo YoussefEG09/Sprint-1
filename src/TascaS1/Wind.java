@@ -1,0 +1,19 @@
+package TascaS1;
+
+public class Wind extends Instruments {
+
+    public Wind(String name, double price) {
+        super(name, price);
+
+
+    }
+
+    public String play() {
+        return "You're playing a wind instrument.";
+    }
+
+    @Override
+    public String toString() {
+        return  super.toString();
+    }
+}
