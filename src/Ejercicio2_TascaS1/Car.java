@@ -6,7 +6,7 @@ public class Car {
     private final double horses;
 
 
-    //We can make the constructor but only with horses atributte. Because its final but we can modify it.
+    //We can make the constructor but only with horses atributte. Because is not static.
     public Car(double horses) {
         this.horses = horses;
     }
