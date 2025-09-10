@@ -8,9 +8,9 @@ public class Strings extends Instruments {
     }
 
     public String play(){
-        if (name == null || name.isEmpty()){
-            throw new IllegalArgumentException("String instrument is not valid");
-        }
+        if (getName() == null || getName().isEmpty()){
+        throw new IllegalArgumentException("String instrument is not valid");
+    }
         return "Now you're playing a string instrument.";
     }
 
