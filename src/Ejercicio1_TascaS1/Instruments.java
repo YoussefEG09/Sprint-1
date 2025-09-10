@@ -4,17 +4,17 @@ public abstract class Instruments {
     private String name;
     private final double price;
 
-    public Instruments (String name, double price){
-        this.name =name;
+    public Instruments(String name, double price) {
+        this.name = name;
         this.price = price;
 
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public double getPrice(){
+    public double getPrice() {
         return price;
     }
 

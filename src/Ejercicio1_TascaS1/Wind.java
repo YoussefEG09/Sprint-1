@@ -9,7 +9,7 @@ public class Wind extends Instruments {
     }
 
     public String play() {
-        if (getName() == null || getName().isEmpty()){
+        if (getName() == null || getName().isEmpty()) {
             throw new IllegalArgumentException("Wind instrument is not valid");
         }
         return "You're playing a wind instrument.";
@@ -17,6 +17,6 @@ public class Wind extends Instruments {
 
     @Override
     public String toString() {
-        return  super.toString();
+        return super.toString();
     }
 }
