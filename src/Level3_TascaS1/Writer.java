@@ -8,7 +8,7 @@ public class Writer  {
     private final String id;
     private static double salary = 1500;
 
-    private List<SportsNews> news;
+    private final List<SportsNews> news;
 
 
     public Writer(String name, String id) {
@@ -44,4 +44,8 @@ public class Writer  {
     public void deleteNews(SportsNews sportnew){
         news.add(sportnew);
     }
+
+
+
+
 }

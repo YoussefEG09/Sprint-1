@@ -1,2 +1,26 @@
-package Level3_TascaS1;public class Main {
+package Level3_TascaS1;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
 }
