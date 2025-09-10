@@ -37,6 +37,22 @@ public class Basket extends SportsNews {
         if (getBasket_Club().equalsIgnoreCase("FCBarcelona") || getBasket_Club().equalsIgnoreCase("Real Madrid")) {
             price += 100;
         }
+        setPrice(price);
         return price;
+    }
+
+    @Override
+    public double calculateNewsMark() {
+        double mark = 4;
+        if (getBasket_Competition().equalsIgnoreCase("Euroliga")) {
+            mark += 3;
+        } else if (getBasket_Competition().equalsIgnoreCase("ACB")) {
+            mark += 2;
+        }
+        if (getBasket_Club().equalsIgnoreCase("FCBarcelona") || getBasket_Club().equalsIgnoreCase("Real Madrid")) {
+            mark += 1;
+        }
+        setMark(mark);
+        return mark;
     }
 }

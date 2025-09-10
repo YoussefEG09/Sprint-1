@@ -48,4 +48,6 @@ public abstract class SportsNews {
     }
 
     public abstract double calculateNewsPrice();
+
+    public abstract double calculateNewsMark();
 }

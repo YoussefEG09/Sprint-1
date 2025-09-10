@@ -22,7 +22,18 @@ public class F1 extends SportsNews{
         if (getF1_team().equalsIgnoreCase("Ferrari") || getF1_team().equalsIgnoreCase("Mercedes")) {
             price += 50;
         }
-
+        setPrice(price);
         return price;
+    }
+
+    @Override
+    public double calculateNewsMark() {
+        double mark = 4;
+
+        if (getF1_team().equalsIgnoreCase("Ferrari") || getF1_team().equalsIgnoreCase("Mercedes")) {
+            mark += 2;
+        }
+        setMark(mark);
+        return mark;
     }
 }

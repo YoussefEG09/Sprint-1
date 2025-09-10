@@ -45,8 +45,30 @@ public class Soccer extends SportsNews{
             price += 100;
         } if (getSoccer_club().equalsIgnoreCase("FCBarcelona") || getSoccer_club().equalsIgnoreCase("Real Madrid")){
             price += 100;
-        } if (getPlayer().equalsIgnoreCase("Ferran Torres") || getPlayer().equalsIgnoreCase("Benzema"))
+        } if (getPlayer().equalsIgnoreCase("Ferran Torres") || getPlayer().equalsIgnoreCase("Benzema")){
             price += 50;
+        }
+        setPrice(price);
         return price;
     }
+
+    @Override
+    public double calculateNewsMark() {
+        double mark = 5;
+        if (getSoccer_competition().equalsIgnoreCase("Champions")) {
+            mark += 3;
+        } else if (getSoccer_competition().equalsIgnoreCase("La Liga")) {
+            mark += 2;
+        }
+        if (getSoccer_club().equalsIgnoreCase("FCBarcelona") || getSoccer_club().equalsIgnoreCase("Real Madrid")) {
+            mark += 1;
+        }
+        if (getPlayer().equalsIgnoreCase("Ferran Torres") || getPlayer().equalsIgnoreCase("Benzema")){
+            mark += 1;
+        }
+        setMark(mark);
+        return mark;
+    }
+
+
 }

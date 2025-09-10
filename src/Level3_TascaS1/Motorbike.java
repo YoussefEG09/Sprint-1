@@ -18,6 +18,22 @@ public class Motorbike extends SportsNews{
 
     @Override
     public double calculateNewsPrice() {
-        return 0;
+        double price = 100;
+        if (getMoto_team().equalsIgnoreCase("Honda") || getMoto_team().equalsIgnoreCase("Yamaha")){
+            price += 50;
+        }
+        setPrice(price);
+        return price;
+    }
+
+    @Override
+    public double calculateNewsMark() {
+        double mark = 3;
+
+        if (getMoto_team().equalsIgnoreCase("Honda") || getMoto_team().equalsIgnoreCase("Yamaha")){
+            mark += 3;
+        }
+        setMark(mark);
+        return mark;
     }
 }

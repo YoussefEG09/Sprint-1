@@ -27,4 +27,27 @@ public class Tennis extends SportsNews{
     public void setPlayers(String players) {
         this.players = players;
     }
+
+    @Override
+    public double calculateNewsPrice() {
+        double price = 150;
+        if (getPlayers().equalsIgnoreCase("Federer") || getPlayers().equalsIgnoreCase("Nadal")
+                || getPlayers().equalsIgnoreCase("Djokovic")) {
+            price += 100;
+        }
+        setPrice(price);
+        return price;
+    }
+
+    @Override
+    public double calculateNewsMark() {
+        double mark = 4;
+
+        if (getPlayers().equalsIgnoreCase("Federer") || getPlayers().equalsIgnoreCase("Nadal")
+                || getPlayers().equalsIgnoreCase("Djokovic")){
+            mark += 3;
+        }
+        setMark(mark);
+        return mark;
+    }
 }
