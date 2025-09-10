@@ -1,7 +1,7 @@
 package Ejercicio1_TascaS1;
 
 public abstract class Instruments {
-    private final String name;
+    public final String name;
     private final double price;
 
     public Instruments (String name, double price){

@@ -8,6 +8,9 @@ public class Percussion extends Instruments{
     }
 
     public String play(){
+        if (name == null || name.isEmpty()){
+            throw new IllegalArgumentException("Percussion instrument is not valid.");
+        }
         return "Now, you're playing percussion instrument.";
     }
 

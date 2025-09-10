@@ -9,6 +9,9 @@ public class Wind extends Instruments {
     }
 
     public String play() {
+        if (name==null || name.isEmpty()){
+            throw new IllegalArgumentException("Wind instrument is not valid");
+        }
         return "You're playing a wind instrument.";
     }
 
