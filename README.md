@@ -1,45 +1,159 @@
 # Java Object-Oriented Programming Exercises
 
-This project contains several Java exercises focused on object-oriented programming concepts such as classes, inheritance, interfaces, static blocks, and more.
+📁 Contents
 
-## 📁 Contents
+Musical Instruments Hierarchy
 
-- [1. Car Class](#1-car-class)
-- [2. Phone and Smartphone Classes](#2-phone-and-smartphone-classes)
-- [3. Static Blocks and Initialization](#3-static-blocks-and-initialization)
+Car Class with Static Members
 
----
-## 1. Car Class
+Phone and Smartphone with Interfaces
 
-### ✔️ Objective:
-Create a `Car` class with attributes using `static`, `final`, and `static final`, demonstrating their differences. Also, implement `brake()` and `accelerate()` methods.
+Sports News Management System
 
-### 📂 Files:
-- `Car.java`
-- `Main.java`
+1. 🎼 Musical Instruments Hierarchy
 
-### 💡 What it demonstrates:
-- Differences between class-level and instance-level attributes.
-- Use of static vs non-static methods.
-- Initialization within the constructor.
+✔️ Objective:
+Create an abstract Instruments class and extend it with Strings, Wind, and Percussion classes, each overriding the play() method.
 
----
+📂 Files:
 
-## 2. Phone and Smartphone Classes
+Instruments.java
 
-### ✔️ Objective:
-Simulate a smartphone using inheritance (`Phone`) and interfaces (`Camera`, `Watch`).
+Strings.java
 
-### 📂 Files:
-- `Phone.java`
-- `Camera.java`
-- `Watch.java`
-- `Smartphone.java`
-- `Main.java`
+Wind.java
 
-### 💡 What it demonstrates:
-- Class inheritance.
-- Implementation of multiple interfaces.
-- Polymorphism through methods like `call()`, `photograph()`, and `alarm()`.
+Percussion.java
 
--
+Main.java
+
+💡 What it demonstrates:
+
+Abstract classes and methods
+
+Inheritance and method overriding
+
+Basic validation and exception handling
+
+2. 🚗 Car Class with Static Members
+
+✔️ Objective:
+Implement a Car class showing the difference between static and instance attributes, including static and non-static methods like brake() and accelerate().
+
+📂 Files:
+
+Car.java
+
+Main.java
+
+💡 What it demonstrates:
+
+Static vs instance variables and methods
+
+Use of final and static final fields
+
+Constructor initialization
+
+3. 📱 Phone and Smartphone with Interfaces
+
+✔️ Objective:
+Simulate a Phone class extended by Smartphone, which implements two interfaces: Camera and Watch.
+
+📂 Files:
+
+Phone.java
+
+Smartphone.java
+
+Camera.java
+
+Watch.java
+
+Main.java
+
+💡 What it demonstrates:
+
+Class inheritance
+
+Implementation of multiple interfaces
+
+Polymorphism via methods like call(), photograph(), and alarm()
+
+4. ⚽ Sports News Management System (Main Project)
+
+✔️ Objective:
+Create an abstract SportsNews class with multiple sport-specific subclasses (Soccer, Basket, Tennis, Motorbike, F1), and a Writer class managing news articles.
+
+📂 Files:
+
+SportsNews.java (abstract)
+
+Soccer.java
+
+Basket.java
+
+Tennis.java
+
+Motorbike.java
+
+F1.java
+
+Writer.java
+
+Menu.java
+
+Main.java
+
+💡 What it demonstrates:
+
+Advanced inheritance and polymorphism
+
+Abstract methods and overriding
+
+Use of collections (ArrayList) to manage related objects
+
+Static members in classes
+
+Basic console UI through a menu system
+
+Encapsulation and validation
+
+Calculation logic for news price and score based on attributes
+
+🚀 How to Run
+
+Compile all .java files.
+
+Run the Main class in Level3_TascaS1.
+
+Use the console menu to manage writers and their sports news articles:
+
+Add/remove writers
+
+Add/remove news articles
+
+List articles per writer
+
+Calculate scores and prices
+
+📝 Notes
+
+Menu system is partially implemented and can be extended.
+
+Some methods like deleteNews in Writer class need fixing (currently adds instead of removes).
+
+Input validation is minimal; further improvements recommended.
+
+Designed as an educational project illustrating OOP principles.
+
+🌟 Future Enhancements
+
+Complete the menu and its functionalities.
+
+Add persistent storage (files or database).
+
+Implement comprehensive input validation and error handling.
+
+Include unit tests for robustness.
+
+Build a GUI interface for better user experience.
