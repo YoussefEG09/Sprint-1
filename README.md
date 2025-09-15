@@ -42,4 +42,4 @@ Simulate a smartphone using inheritance (`Phone`) and interfaces (`Camera`, `Wat
 - Implementation of multiple interfaces.
 - Polymorphism through methods like `call()`, `photograph()`, and `alarm()`.
 
----
+-
